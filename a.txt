@@ -1,2 +1,23 @@
 Git is a distributed version control system.
 Git is free software.
+1.创建SSH秘钥并放到github的SSH设置上
+（$ssh-keygen -t rsa -C "swa5678972@126.com"）
+（$cat 目录/.ssh/id_rsa.pub）
+2.测试是否已经连接上
+（$ssh -T git@github.com）
+4.创建用户名和用户电子邮件
+（$git config --global user.email "you@example.com"
+  $git config --global user.name "Your Name"）
+3.创建版本库
+（$mkdir flask-cm
+  $git init）
+4.工作区与缓存区的概念与提交与操作查看
+（$git add a.txt
+  $git commit -m "注释"
+  $git diff a.txt
+  $git status
+  $git log）
+5.版本回退
+（$git reset --hard HEAD^
+  $git reflog
+  $git reset --hard 版本号）
